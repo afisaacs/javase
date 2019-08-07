@@ -61,10 +61,43 @@ El IDE recomendado por Oracle es NetBeans, pero también están Eclipse e Intell
 
 ### ETAPAS DE LA PROGRAMACIÓN
 
-
 1. Escribir nuestros archivos .java.
 2. Compilar, cargar y verificar nuestros archivos con javac (los IDEs nos permiten compilar con solo presionar un botón).
 3. Al compilar obtenemos archivos .class con código que nuestras computadoras pueden entender (Byte Code).
 4. La JVM (Java Virtual Machine) se encarga de ejecutar el código de forma que funcione en cualquier dispositivo o sistema operativo.
 
 Java es un lenguaje compilado e interpretado al mismo tiempo.
+
+## VARIABLES EN JAVA
+
+### CONVENCION DE NOMBRES
+
+Una convención de nombres es un patrón que deben seguir los nombres de las variables para que el código esté organizado, entendible y sin repetidos.
+
+- Java es sensible a mayúsculas y minúsculas, este punto es clave al seguir una convención.
+- Las variables siempre deben comenzar con un simbolo de letra, $ o _.
+- No puedes usar el simbolo - en ninguna parte de la variable.
+
+Las variables constantes son variables cuyo valor nunca va a cambiar, por lo que se deben escribir completamente en mayúsculas y usando el caracter _.
+
+### JAVA DOCS
+
+Los Java Docs son una herramienta usada por muchas otras herramientas y aplicaciones porque nos ayuda a documentar todo nuestro código usando comentarios. Además, nos permite visualizar la documentación en formato HTML.
+
+Vamos a documentar la función convertToDolar. Recuerda que esta función devuelve un número double y recibe dos argumentos: quantity (de tipo double) y currency (de tipo String):
+
+```java
+/**
+ * Descripción general de nuestra función.
+ * 
+ * @param quantity Descripción del parámetro quanity.
+ * @param currency Descripción del parámetro currency (MXN o COP).
+ * @return Descripción del valor que devolvemos en esta función.
+ * *
+```
+
+Para que el IDE muestre la descripción y documentación de las funciones debemos entrar a IntelliJ IDEA > Preferences > Editor > General > Code Complettion y habilitar la opción de Show the documentarion popup.
+
+¡No olvides documentar todas las funciones que has escrito hasta ahora!
+
+![Tags java docs](imgs/tagsjavadocs.jpg)
